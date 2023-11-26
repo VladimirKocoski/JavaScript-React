@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: rgb(229, 229, 229) ;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+    letter-spacing: 0;
+    font-size: 18px;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+.faq-container {
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.faq{
+    
+    background-color: transparent; 
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transform: 0.3s ease;
+    }
+
+.faq.active {
+    background-color: rgb(248, 248, 248);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    background-color: rgb(231, 98, 98);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.btn .fa-times {
+    display: none;
+}
+
+.faq.active .btn .fa-times {
+    color: #ffff;
+    display: none;
+}
+
+.faq.active .btn .fa-chevron-down {
+    display: block;
+    color: #ffff;
+}
